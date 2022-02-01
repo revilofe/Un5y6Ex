@@ -21,7 +21,6 @@ class Piano{
                 Nota.SOL -> print("soool ")
                 Nota.LA -> print("laaa ")
                 Nota.SI -> print("siiii ")
-                else -> {"ERROR"}
             }
         }
         println("")
