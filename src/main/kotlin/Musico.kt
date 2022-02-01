@@ -2,12 +2,12 @@ interface Interprete {
     val instrumento: Instrumento
     var cancion: Array<Nota?>
 
-    open fun interpretar()
+    fun interpretar()
 }
 
 open class Musico (unInstrumento:Instrumento, unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0)) : Interprete {
     override val instrumento = unInstrumento
-    override var cancion: Array<Nota?> = unaCancion
+    final override var cancion: Array<Nota?> = unaCancion
         set(value) {
             field = value
             value.forEach { nota ->
