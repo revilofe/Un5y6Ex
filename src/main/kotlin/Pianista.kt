@@ -1,19 +1,7 @@
+class Pianista(unInstrumento:Instrumento, unaCancion: Array<Nota?>) : Musico(unInstrumento, unaCancion) {
 
-class Pianista(unaCancion: Array<Nota?> = arrayOfNulls<Nota?>(0)) {
-
-    private val piano = Piano()
-    var cancion: Array<Nota?> = unaCancion
-        set(value) {
-            field = value
-            value.forEach { nota ->
-                i("Pianista.setCancion","incorpora nota $nota de canción")
-                nota?.let { piano.incorporaNota(nota) }
-            }
-        }
-
-    init {
-        cancion = unaCancion
+    override fun interpretar() {
+        println("SOY PIANISTA")
+        return super.interpretar()
     }
-
-    fun interpretar() = piano.play()
 }
