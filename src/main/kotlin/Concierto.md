@@ -60,7 +60,6 @@ La estructura de clase que se espera es la siguiente:
 
   ![](./../resources/un5y6/uml.png)
 
-
 ## 2. Evaluación
 
 Se tendrá en cuenta el uso de superclases, interfaces, clases abstractas, el uso de jerarquía de clases ya conocidas y que nos las proporcionan kotlin, como por ejemplo List, Map, Set. etc.
