@@ -7,7 +7,7 @@ abstract class Instrumento {
 
     fun reset() = melodia.clear()
 
-    fun incorporaCancion(cancion:Array<Nota?>)
+    fun incorporaMelodia(cancion:Array<Nota?>)
     {
         cancion.forEach { nota ->
             nota?.let { melodia.add(nota) }
