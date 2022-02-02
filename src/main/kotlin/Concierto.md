@@ -17,7 +17,7 @@ Actualmente solo se puede dar un concierto del pianista, tocando el piano. Se pu
 
 ## 2. ¿Qué se pide?
 
-1. Un `Pianista`, podrá tocar (método `play`) cualquier instrumento (`Instrumento`)
+1. Un `Pianista`, podrá tocar (método `interpretar`) cualquier instrumento (`Instrumento`)
 2. Añadir método `reset` al `Instrumento` para poder limpiar la melodía asociada.
 3. Añadir método `incorporaCancion(Array<Nota?>)` para añadir una canción nueva directamente.
 4. El método `play` es **específico** de cada instrumento en particular.
