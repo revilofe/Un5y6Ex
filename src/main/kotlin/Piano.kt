@@ -9,6 +9,8 @@ class Piano{
         melodia.add(nota)
     }
 
+    fun reset() = melodia.clear()
+
     //Recorreremos las notas y las interpretaremos de la forma específica del piano.
     fun play() {
         println("Tocando piano")
