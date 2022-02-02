@@ -7,7 +7,7 @@
 Tenemos un conjunto de clases que nos permiten simular la realización de un concierto.
 - `Log` contiene lo necesario para enviar mensajes de log. No cambiará.
 - `Nota` es una clase enumerada para trabajar con las notas musicales. No cambiará.
-- `Concierto` tiene el método `main` que ejecuta una prueba de nuestro programa concierto.
+- `Concierto` tiene el método `main` que ejecuta una prueba de nuestro programa concierto. 
 - `Piano` representa un instrumento, `melodía` es una lista de notas y el método `play` "las reproduce según el instrumento"
 - `Pianista` representa un intérprete, `canción` es una lista de notas y el método `interpretar` toca el instrumento para reproducir las notas.
 
@@ -28,7 +28,7 @@ Actualmente solo se puede dar un concierto del pianista, tocando el piano. Se pu
 10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, salvo el método `interpretar`  que será propio de cada músico (`Musico`)
 11. Se quiere poder realizar conciertos por cualquier persona que sepa interpretar una obra. `Interprete`
 12. Por lo pronto, tendremos 2 músicos: `Pianista`y `Violinista`, cada uno con un `Interpretar` especializado.
-13. Tendremos un `Interprete` no músico, que tambien sabrá tocar `Instrumento`'s 
+13. Tendremos un `Interprete` no músico, que tambien sabrá tocar `Instrumento`'s (`AlumnoMusico`)
 14. Se puede dar un concierto con multiples `Interprete`'s, según el código descrito en el epígrafe siguiente.
 
 ## 3. Ejecución y test
@@ -104,7 +104,7 @@ Se entrega la URL al repositorio, el repositorio será:
 - **privado**
 - Compartido conmigo.
 - El nombre del repositorio será `DAM1_id_iniciales` donde:
-    - `id`: es el ide de la actividad, por ejemplo pe_un5y7
+    - `id`: es el ide de la actividad, por ejemplo pe_un5y6
     - `iniciales': son tus iniciales por ejemplo EFO las mías.
 
 ## 4. Bibliografía
