@@ -92,9 +92,9 @@ Se tendrá en cuenta el uso de superclases, interfaces, clases abstractas, el us
 Basados en los RA4 y RA7
 
 ###### Realizados los puntos del epígrafe 2.
-0. No lo hace; 5. Crea clases heredadas que sobreescriben pero no adecuadamente o no completo; 10. Correcto.
-###### Se han diseñado y aplicado jerarquías de clases: Interfaces y clases abstractas,
-0. No lo hace; 5. Se diseña y aplica jerarquía pero no adecuadamente o no completa; 10. Correcto.
+0. No lo hace; 5. mas de la mitad; 10. Completos todos los puntos.
+###### Se han diseñado y aplicado jerarquías de clases: Interfaces y clases abstractas, herencia. Según RA4 y RA7
+0. No lo hace; 5. Se diseña y aplica jerarquía de clases aplicando polimorfismo pero no adecuadamente o no completa; 10. Correcto.
 
 
 Adicionalmente se tendrá en cuenta:
