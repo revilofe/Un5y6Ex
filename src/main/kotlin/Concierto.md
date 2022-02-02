@@ -14,11 +14,6 @@ Tenemos un conjunto de clases que nos permiten simular la realización de un con
 Actualmente solo se puede dar un concierto del pianista, tocando el piano. Se puede ver en el archivo `Concierto.kt`
 
 
-Crear la clase abstracta Instrumento, que almacena en una tabla las notas musicales de
-una melodía (dentro de una misma octava). El método ada () añade nuevas notas musi-
-cales. La clase también dispone del método abstracto interpretar () que, en cada sub-
-clase que herede de Instrumento, mostrará por consola las notas musicales según las
-interprete. Utilizar enumerados para definir las notas musicales.
 
 ## 2. ¿Qué se pide?
 
@@ -34,7 +29,8 @@ interprete. Utilizar enumerados para definir las notas musicales.
 10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, aunque cada músico sobreescribirá su método `interpretar` (`Musico`)
 11. Se quiere poder realizar conciertos por cualquier persona que sepa interpretar una obra. `Interprete`
 12. Por lo pronto, tendremos 2 músicos: `Pianista`y `Violinista`, cada uno con un `Interpretar` especializado.
-13. Se puede dar un concierto con multiples especialistas, según el código descrito en el epígrafe siguiente.
+13. Tendremos un `Interprete` no músico, que tambien sabrá tocar `Instrumento's 
+14. Se puede dar un concierto con multiples especialistas, según el código descrito en el epígrafe siguiente.
 
 ## 3. Ejecución y test
 La práctica se ejecutará con este código:
