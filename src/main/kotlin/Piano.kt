@@ -1,19 +1,28 @@
-//Un piano es un instrumento que interpreta las notas con un timbre muy
-//característico
-class Piano  //podenos añadir tantos atributos y métodos como necesitemos
-    : Instrumento() {
-    //implementamos el método abstracto
+
+//Un piano es un instrumento que interpreta las notas con un timbre muy característico
+class Piano{
+
+   //tabla que almacena las notas a interpretar
+    private var melodia = mutableListOf<Nota>()
+
+    fun incorporaNota(nota: Nota) {
+        melodia.add(nota)
+    }
+
+    fun reset() = melodia.clear()
+
     //Recorreremos las notas y las interpretaremos de la forma específica del piano.
-    override fun interpretar() {
-        for (nota in melodia) {
+    fun play() {
+        println("Tocando piano")
+        melodia.forEach { nota ->
             when (nota) {
-                Nota.DO -> print("do ")
-                Nota.RE -> print("re ")
-                Nota.MI -> print("mi ")
-                Nota.FA -> print("fa ")
-                Nota.SOL -> print("sol ")
-                Nota.LA -> print("la ")
-                Nota.SI -> print("si ")
+                Nota.DO -> print("dooo ")
+                Nota.RE -> print("reee ")
+                Nota.MI -> print("miiii ")
+                Nota.FA -> print("faaa ")
+                Nota.SOL -> print("soool ")
+                Nota.LA -> print("laaa ")
+                Nota.SI -> print("siiii ")
             }
         }
         println("")
