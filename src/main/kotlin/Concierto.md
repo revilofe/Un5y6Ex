@@ -25,7 +25,7 @@ Actualmente solo se puede dar un concierto del pianista, tocando el piano. Se pu
 7. Hay que documentar la clase `Instrumento`, según las indicaciones de KDoc.
 8. Generar la documentación haciendo uso de Dokka.
 9. HastA ahora se daban conciertos monoespecialista, ahora se desea que se puedan dar conciertos por cualquieer persona que sepa interpretar una obra. `Interprete`.
-10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, salvo el método `interpretar`  que será propio de cada músico (`Musico`)
+10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común (`Musico`), salvo el método `interpretar`  que será propio de cada músico especializado. 
 11. Se quiere poder realizar conciertos por cualquier persona que sepa interpretar una obra. `Interprete`
 12. Por lo pronto, tendremos 2 músicos: `Pianista`y `Violinista`, cada uno con un `Interpretar` especializado.
 13. Tendremos un `Interprete` no músico, que tambien sabrá tocar `Instrumento`'s (`AlumnoMusica`)
