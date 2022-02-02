@@ -18,15 +18,14 @@ Actualmente solo se puede dar un concierto del pianista, tocando el piano. Se pu
 ## 2. ¿Qué se pide?
 
 1. Un `Pianista`, podrá tocar (método `interpretar`) cualquier instrumento (`Instrumento`)
-2. Añadir método `reset` al `Instrumento` para poder limpiar la melodía asociada.
-3. Añadir método `incorporaCancion(Array<Nota?>)` para añadir una canción nueva directamente.
-4. El método `play` es **específico** de cada instrumento en particular.
+2. Añadir método `incorporaCancion(Array<Nota?>)` al `Instrumento` para añadir una canción nueva directamente.
+3. El método `play` es **específico** de cada instrumento en particular.
 5. Por lo pronto, tendremos 2 instrumentos: `Piano`y `Violin`, cada uno con un `play` especializado.
 6. Hay que evitar la dependencia que existe entre `Pianista` y `Piano`
 7. Hay que documentar la clase `Instrumento`, según las indicaciones de KDoc.
 8. Generar la documentación haciendo uso de Dokka.
-9. Has ahora se daban concierto monoespecialista, ahora se quiere poder dar conciertos por cualquieer persona que sepa interpretar una obra. `Interprete`.
-10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, aunque cada músico sobreescribirá su método `interpretar` (`Musico`)
+9. HastA ahora se daban conciertos monoespecialista, ahora se desea que se puedan dar conciertos por cualquieer persona que sepa interpretar una obra. `Interprete`.
+10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, salvo el método `interpretar`  que será propio de cada músico (`Musico`)
 11. Se quiere poder realizar conciertos por cualquier persona que sepa interpretar una obra. `Interprete`
 12. Por lo pronto, tendremos 2 músicos: `Pianista`y `Violinista`, cada uno con un `Interpretar` especializado.
 13. Tendremos un `Interprete` no músico, que tambien sabrá tocar `Instrumento`'s 
