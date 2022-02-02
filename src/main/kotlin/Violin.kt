@@ -5,7 +5,7 @@ class Violin : Instrumento() {
 
     //Recorreremos las notas y las interpretaremos de la forma específica del piano.
     override fun play() {
-        println("Tocando violin")
+        println("===> Tocando violin")
         melodia.forEach { nota ->
             when (nota) {
                 Nota.DO -> print("doggg ")
