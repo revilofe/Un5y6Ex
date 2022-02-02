@@ -34,25 +34,51 @@ interprete. Utilizar enumerados para definir las notas musicales.
 10. Hay que tener en cuenta que todos los músicos, tendrán un comportamiento común, aunque cada músico sobreescribirá su método `interpretar` (`Musico`)
 11. Se quiere poder realizar conciertos por cualquier persona que sepa interpretar una obra. `Interprete`
 12. Por lo pronto, tendremos 2 músicos: `Pianista`y `Violinista`, cada uno con un `Interpretar` especializado.
+13. Se puede dar un concierto con multiples especialistas, según el código descrito en el epígrafe siguiente.
 
-### Ejecución
+## 3. Ejecución y test
 La práctica se ejecutará con este código:
 ```kotlin
 fun main() {
     val obra = arrayOf<Nota?>(Nota.MI, Nota.MI, Nota.DO, Nota.FA)
-    val interpretes = mutableMapOf<String, Interprete>(
+    val interpretes = mutableMapOf(
         "Pianista" to Pianista( Piano(), obra),
-        "Violinista" to Violinista( Violin(), obra)
+        "Violinista" to Violinista( Violin(), obra),
+        "AlumnoMusico1" to AlumnoMusica( Violin(), obra),
+        "AlumnoMusico2" to AlumnoMusica( Piano(), obra)
     )
 
-    repeat(2)
+    repeat(4)
     {
         interpretes.keys.random().run {
+            i("CONCIERTO", this)
             interpretes[this]?.interpretar()
             interpretes.remove(this)
         }
     }
 }
+
+```
+Y la salida debería ser similar a lo siguiente:
+```
+####### - SOY PIANISTA
+===> Tocando piano
+miiii miiii dooo faaa 
+
+####### - SOY VIOLINISTA
+===> Tocando violin
+miggg miggg doggg faggg 
+
+####### - SOY AlUMNO DE MUSICA
+===> Tocando piano
+miiii miiii dooo faaa 
+
+####### - SOY AlUMNO DE MUSICA
+===> Tocando violin
+miggg miggg doggg faggg 
+
+Process finished with exit code 0
+
 ```
 ### Estructura de clases final esperado
 
@@ -63,15 +89,12 @@ La estructura de clase que se espera es la siguiente:
 ## 2. Evaluación
 
 Se tendrá en cuenta el uso de superclases, interfaces, clases abstractas, el uso de jerarquía de clases ya conocidas y que nos las proporcionan kotlin, como por ejemplo List, Map, Set. etc.
+Basados en los RA4 y RA7
 
-###### d) Se han creado clases heredadas que sobrescriban la implementación de métodos de la superclase.
+###### Realizados los puntos del epígrafe 2.
 0. No lo hace; 5. Crea clases heredadas que sobreescriben pero no adecuadamente o no completo; 10. Correcto.
-###### e) Se han diseñado y aplicado jerarquías de clases.
+###### Se han diseñado y aplicado jerarquías de clases: Interfaces y clases abstractas,
 0. No lo hace; 5. Se diseña y aplica jerarquía pero no adecuadamente o no completa; 10. Correcto.
-###### f) Se han probado y depurado las jerarquías de clases.
-0. No lo hace; 5. No funciona adecuadamente; 10. Correcto.
-###### g) Se han realizado programas que implementen y utilicen jerarquías de clases.
-0. No lo hace; 5. Implementa y utiliza jerarquías de clases vistas pero no correctamente; 10. Correcto.
 
 
 Adicionalmente se tendrá en cuenta:
