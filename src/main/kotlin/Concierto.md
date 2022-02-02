@@ -41,7 +41,7 @@ La práctica se ejecutará con este código:
 fun main() {
     val obra = arrayOf<Nota?>(Nota.MI, Nota.MI, Nota.DO, Nota.FA)
     val interpretes = mutableMapOf<String, Interprete>(
-        "Pinista" to Pianista( Piano(), obra),
+        "Pianista" to Pianista( Piano(), obra),
         "Violinista" to Violinista( Violin(), obra)
     )
 
@@ -54,6 +54,11 @@ fun main() {
     }
 }
 ```
+### Estructura de clases final esperado
+
+La estructura de clase que se espera es la siguiente:
+
+  ![](./../resources/un5y6/uml.png)
 
 
 ## 2. Evaluación
@@ -82,7 +87,7 @@ Se entrega la URL al repositorio, el repositorio será:
 - **privado**
 - Compartido conmigo.
 - El nombre del repositorio será `DAM1_id_iniciales` donde:
-    - `id`: es el ide de la actividad, por ejemplo 6_5
+    - `id`: es el ide de la actividad, por ejemplo pe_un5y7
     - `iniciales': son tus iniciales por ejemplo EFO las mías.
 
 ## 4. Bibliografía
