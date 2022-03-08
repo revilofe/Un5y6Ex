@@ -81,7 +81,7 @@ La estructura de clase que se espera es la siguiente:
 
   ![](./../resources/un5y6/uml.png)
 
-## 2. Evaluación
+## 4. Evaluación
 
 Se tendrá en cuenta el uso de superclases, interfaces, clases abstractas, el uso de jerarquía de clases ya conocidas y que nos las proporcionan kotlin, como por ejemplo List, Map, Set. etc.
 Basados en los RA4 y RA7
@@ -97,7 +97,7 @@ Adicionalmente se tendrá en cuenta:
 - El código realizado es limpio y está comentado.
 - Se cumple requisitos de entrega.
 
-## 3. Condiciones de entrega
+## 5. Condiciones de entrega
 
 Se entrega la URL al repositorio, el repositorio será:
 
